@@ -1,0 +1,253 @@
+/*css reset*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:18px;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ html,body{
+     width:100%;
+     height:100%;
+ }
+
+
+
+:focus {
+    outline: none;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+    text-align: center;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*write  self */
+header{
+    position: relative;
+    height:4.889rem;
+    line-height: 4.889rem;
+    background-color: #fff;
+    border-bottom: 1px solid #B2B2B2;
+}
+a.cback{
+    position: absolute;
+    left: 0;
+    top:0;
+    font-size: 1.889rem;
+    color:#333;
+    height:4.889rem;
+    line-height: 4.889rem;
+    text-indent: 1.44rem;
+}
+header>p{
+    color:#333;
+    height:4.889rem;
+    line-height: 4.889rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+main>img{
+    width: 100%;
+}
+
+main{
+    position: relative;
+    background-color: #fdef0a;
+}
+
+a.task1{
+     position: absolute;
+     top:47.42%;
+     left:12.13%;
+     width:11.11rem;
+     height: 2.67rem;
+     line-height: 2.67rem;
+     font-size: 1.33rem;
+     color: #FDEF0A;
+     background-color: #FF4833;
+     -webkit-border-radius: 1.835rem;
+        -moz-border-radius: 1.835rem;
+             border-radius: 1.835rem;
+ }
+
+a.task2{
+    position: absolute;
+    top:46.63%;
+    right:14.4%;
+    width:11.11rem;
+    height: 2.67rem;
+    line-height: 2.67rem;
+    font-size: 1.33rem;
+    color: #862EDE;
+    background-color: #FFF;
+    -webkit-border-radius: 1.835rem;
+       -moz-border-radius: 1.835rem;
+            border-radius: 1.835rem;
+}
+
+
+
+
+a.task3{
+    position: absolute;
+    top:75.99%;
+    left:12.53%;
+    width:11.11rem;
+    height: 2.67rem;
+    line-height: 2.67rem;
+    font-size: 1.33rem;
+    color: #FDEF0A;
+    background-color: #FF4833;
+    -webkit-border-radius: 1.835rem;
+    -moz-border-radius: 1.835rem;
+    border-radius: 1.835rem;
+}
+
+a.task4{
+    position: absolute;
+    top:79.4%;
+    right:14.4%;
+    width:11.11rem;
+    height: 2.67rem;
+    line-height: 2.67rem;
+    font-size: 1.33rem;
+    color: #862EDE;
+    background-color: #FFF;
+    -webkit-border-radius: 1.835rem;
+    -moz-border-radius: 1.835rem;
+    border-radius: 1.835rem;
+}
+
+main>p{
+    text-align: center;
+    height:1.33rem;
+    font-size: 1.33rem;
+    color: #333;
+    line-height: 1.33rem;
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+}
+
+p.notice{
+    font-size: 1.11rem;
+    height: 1.11rem;
+    line-height: 1.11rem;
+    text-align: center;
+    color: #333;
+    background-color: #fdef0a;
+    padding: 1.68rem 0 0.89rem 0;
+}
+
+div.rule{
+    background-color: #fdef0a;
+}
+
+div.rule>p{
+    text-align: center;
+    font-size: 1.78rem;
+    line-height: 1.78rem;
+    height: 1.78rem;
+    color: #FF3D1B;
+}
+
+div.rule>hr{
+    width:5rem;
+    height: 0.22rem;
+    border: none;
+    outline: none;
+    margin: 0.28rem auto 0.92rem auto;
+    background-color: #F95A28;
+
+    border-radius: 0.11rem;
+}
+
+div.rule ul li{
+    list-style: none;
+    line-height: 2.5rem;
+    color: #333;
+}
+
+div.rule ul{
+    margin: 0 1.94rem;
+    padding-bottom: 3.29rem;
+}
+
+div.rule{
+    display: none;
+}

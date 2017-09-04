@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="Novice_task_mobile.css">
+
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="钱内助">
+    <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+        var $html = $("html");
+        var $originalHtmlFontSize = parseInt($html.css("fontSize"));
+
+        var htmlfontsize = $html.width()*$originalHtmlFontSize/750;
+        $html.css({
+            "font-size": htmlfontsize+ "px"
+        });
+
+        $(window).resize(
+            function(){
+
+                htmlfontsize = $html.width()*$originalHtmlFontSize/750;
+                $html.css({
+                    "font-size": htmlfontsize+ "px"
+                });
+
+            }
+
+        );
+    </script>
+</head>
+<body>
+    <header>
+        <a href="javascript:window.history.back();" class="cback">返回</a>
+        <p>钱内助新手淘金计划</p>
+    </header>
+    <main>
+        <img src="main_mobile.png" alt="">
+        <a href="" class="task1">立即注册</a>
+        <a href="" class="task2">立即投资</a>
+        <a href="" class="task3">立即领取</a>
+        <a href="" class="task4">立即投资</a>
+        <p class="detail">点击查看详细活动规则</p>
+    </main>
+    <footer>
+        <div class="rule">
+            <p>活动规则</p>
+            <hr>
+            <ul>
+                <li>1、本活动仅限活动开始后注册的新用户参加；</li>
+                <li>2、活动期间内完成相应任务，可获得相应奖励；</li>
+                <li>3、每项任务奖励限获得一次；</li>
+                <li>4、528红包在注册后直接发放到用户钱内助账户中，加息券奖励需要用户完成任务后，
+                    在活动页面自行领取；领取成功后用户可在钱内助app——“钱袋”——“我的优
+                    惠”中查看使用规则；
+                </li>
+                <li>5、本活动最终解释权归钱内助所有。</li>
+            </ul>
+        </div>
+        <p class="notice">理财有风险，投资需谨慎</p>
+    </footer>
+</body>
+<script type="text/javascript">
+    var $p = $("p.detail");
+    var $divRule = $("div.rule");
+    var t = $divRule.height();
+    console.log(t);
+    $body = $("body");
+    $p.on("touchend",function(){
+        $(this).fadeOut(400);
+        $divRule.show();
+        $html.animate({'scrollTop':t},400)
+    });
+
+</script>
+</html>
