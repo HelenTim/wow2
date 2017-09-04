@@ -238,7 +238,7 @@ div.rule>hr{
 
 div.rule ul li{
     list-style: none;
-    line-height: 10;
+    line-height: 2.5rem;
     color: #333;
 }
 
