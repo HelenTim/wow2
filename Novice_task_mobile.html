@@ -65,18 +65,19 @@
         </div>
         <p class="notice">理财有风险，投资需谨慎</p>
     </footer>
-</body>
-<script type="text/javascript">
-    var $p = $("p.detail");
-    var $divRule = $("div.rule");
-    var t = $divRule.height();
-    console.log(t);
-    $body = $("body");
-    $p.on("touchend",function(){
-        $(this).fadeOut(400);
-        $divRule.show();
-        $("html,body").animate({'scrollTop':t},400)
-    });
+    <script type="text/javascript">
+        var $p = $("p.detail");
+        var $divRule = $("div.rule");
+        var t = $divRule.height();
+        console.log(t);
+        $body = $("body");
+        $p.on("touchend",function(){
+            $(this).fadeOut(400);
+            $divRule.show();
+            $("html,body").animate({'scrollTop':t},400)
+        });
 
-</script>
+    </script>
+</body>
+
 </html>
